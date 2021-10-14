@@ -41,8 +41,10 @@ player2.attack();
 // ## Task #2
 // ## Task #3
 
+   const $arenas = document.querySelector('.arenas');
 
-// debugger;
+   createPlayer( 'player1', player1 ); 
+   createPlayer( 'player2', player2 );
 
    function createPlayer( player, obj ) {
    
@@ -67,7 +69,6 @@ player2.attack();
    $img.src = obj.img;
 
 
-   const $arenas = document.querySelector('.arenas');
    $arenas.appendChild($player1);
 
    $player1.appendChild($progressbar);
@@ -80,5 +81,3 @@ player2.attack();
 
 }
 
-createPlayer( 'player1', player1 ); 
-createPlayer( 'player2', player2 );
